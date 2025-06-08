@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.Artiste-name {
+  font-size: 1.5rem;
+  font-family: 'Staatliches', sans-serif;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-head {
+  background-color: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  position: relative;
+  z-index: 1001;
+}
+
+.menu-icons {
+  font-size: 28px;
+  cursor: pointer;
+}
+.menu-icons .close-menu {
+  display: none;
+}
+
+/* Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.98);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.CTA li {
+  margin: 1.2rem 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.socials {
+  margin-top: 2rem;
+}
+
+.socials i {
+  margin: 0 0.6rem;
+  font-size: 1.5rem;
+  color: white;
+}
